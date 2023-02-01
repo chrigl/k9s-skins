@@ -1,0 +1,108 @@
+# Styles...
+foreground: &foreground "#575279"
+background: &background "#faf4ed"
+current_line: &current_line "#f2e9e1"
+selection: &selection "#faf4ed"
+comment: &comment "#6272a4" # TODO
+rose: &rose "#d7827e"
+pine: &pine "#286983"
+gold: &gold "#ea9d34"
+iris: &iris "#907aa9"
+iris2: &iris2 "#907aa9" # TODO
+love: &love "#b4637a"
+gold2: &gold2 "#ea9d34" # TODO
+# Skin...
+k9s:
+  # General K9s styles
+  body:
+    fgColor: *foreground
+    bgColor: *background
+    logoColor: *iris2
+  # Command prompt styles
+  prompt:
+    fgColor: *foreground
+    bgColor: *background
+    suggestColor: *iris2
+  # ClusterInfoView styles.
+  info:
+    fgColor: *iris
+    sectionColor: *foreground
+  # Dialog styles.
+  dialog:
+    fgColor: *foreground
+    bgColor: *background
+    buttonFgColor: *foreground
+    buttonBgColor: *iris2
+    buttonFocusFgColor: *gold2
+    buttonFocusBgColor: *iris
+    labelFgColor: *gold
+    fieldFgColor: *foreground
+  frame:
+    # Borders styles.
+    border:
+      fgColor: *selection
+      focusColor: *current_line
+    menu:
+      fgColor: *foreground
+      keyColor: *iris
+      # Used for favorite namespaces
+      numKeyColor: *iris
+    # CrumbView attributes for history navigation.
+    crumbs:
+      fgColor: *foreground
+      bgColor: *current_line
+      activeColor: *current_line
+    # Resource status and update styles
+    status:
+      newColor: *rose
+      modifyColor: *iris2
+      addColor: *pine
+      errorColor: *love
+      highlightcolor: *gold
+      killColor: *comment
+      completedColor: *comment
+    # Border title styles.
+    title:
+      fgColor: *foreground
+      bgColor: *current_line
+      highlightColor: *gold
+      counterColor: *iris2
+      filterColor: *iris
+  views:
+    # Charts skins...
+    charts:
+      bgColor: default
+      defaultDialColors:
+        - *iris2
+        - *love
+      defaultChartColors:
+        - *iris2
+        - *love
+    # TableView attributes.
+    table:
+      fgColor: *foreground
+      bgColor: *background
+      # Header row styles.
+      header:
+        fgColor: *foreground
+        bgColor: *background
+        sorterColor: *rose
+    # Xray view attributes.
+    xray:
+      fgColor: *foreground
+      bgColor: *background
+      cursorColor: *current_line
+      graphicColor: *iris2
+      showIcons: false
+    # YAML info styles.
+    yaml:
+      keyColor: *iris
+      colonColor: *iris2
+      valueColor: *foreground
+    # Logs styles.
+    logs:
+      fgColor: *foreground
+      bgColor: *background
+      indicator:
+        fgColor: *foreground
+        bgColor: *iris2
