@@ -2,7 +2,6 @@
 foreground: &foreground "#575279"
 background: &background "#faf4ed"
 current_line: &current_line "#d7827e"
-selection: &selection "#faf4ed"
 comment: &comment "#6272a4" # TODO
 rose: &rose "#d7827e"
 pine: &pine "#286983"
@@ -40,7 +39,7 @@ k9s:
   frame:
     # Borders styles.
     border:
-      fgColor: *selection
+      fgColor: *rose
       focusColor: *current_line
     menu:
       fgColor: *foreground
