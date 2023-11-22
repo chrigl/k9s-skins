@@ -1,7 +1,8 @@
 # Styles...
 foreground: &foreground "#575279"
 background: &background "#faf4ed"
-current_line: &current_line "#d7827e"
+current_line: &current_line "#f2e9e1"
+border: &border "#f2e9e1"
 comment: &comment "#6272a4" # TODO
 rose: &rose "#d7827e"
 pine: &pine "#286983"
@@ -22,6 +23,9 @@ k9s:
     fgColor: *foreground
     bgColor: *background
     suggestColor: *iris2
+    border:
+      command: *rose
+      default: *pine
   # ClusterInfoView styles.
   info:
     fgColor: *iris
@@ -39,8 +43,8 @@ k9s:
   frame:
     # Borders styles.
     border:
-      fgColor: *rose
-      focusColor: *current_line
+      fgColor: *border
+      focusColor: *border
     menu:
       fgColor: *foreground
       keyColor: *iris
