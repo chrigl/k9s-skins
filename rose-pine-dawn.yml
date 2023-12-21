@@ -109,3 +109,7 @@ k9s:
       indicator:
         fgColor: *foreground
         bgColor: *iris2
+    picker:
+      mainColor: *foreground
+      focusColor: *rose
+      shortcutColor: *pine
